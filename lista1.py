@@ -1,4 +1,4 @@
-# Exercício 1
+    # Exercício 1
 
 numero = int(input("Digite um número inteiro: "))
 resto = numero % 2
@@ -7,7 +7,7 @@ if resto == 0:
 else:
     print("Seu número é ímpar")
 
-# Exercício 2
+    # Exercício 2
 
 a = int(input("Digite um número inteiro: "))
 b = int(input("Digite outro número inteiro: "))
@@ -88,4 +88,4 @@ elif (soma == 2):
 else: 
     print("Você é inocente")
 
-    # :D
+    # Fim :D
