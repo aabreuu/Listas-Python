@@ -27,5 +27,4 @@ while True:
         print("Programa encerrado")
         break
 
-    
-    
+        # :D²
