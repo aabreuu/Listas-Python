@@ -12,7 +12,7 @@ while (loop <= n):
     print(f"{loop}")
     loop += 1
 
-    # Exercício 3
+    # Exercício 3 
 
 while True:
     numero1 = float(input("Digite um número: "))
@@ -90,7 +90,7 @@ print(f"A soma dos valores é {soma}")
 p = 0 # Para no fim do código, pôr um fim no "while"
 while (p == 0):
     nome = input("Digite um nome de no mínimo 4 caracteres: \n")
-    if (len(nome) < 3):
+    if (len(nome) < 4):
         print("Nome inválido\n")
         continue
     p += 1
@@ -103,7 +103,7 @@ while (p == 1):
     p += 1
 
 while (p == 2):
-    salario = input("Digite seu salário: \n")
+    salario = float(input("Digite seu salário: \n"))
     if (salario < 0):
         print("Salário inválido\n")
         continue
@@ -111,23 +111,31 @@ while (p == 2):
 
 while (p == 3):
     sexo = input("Digite seu sexo (M ou F): \n").lower()
-    if (sexo != "m") or (sexo != "f"):
+    if (sexo != "m") and (sexo != "f"):
         print("Sexo inválido\n")
         continue
     p += 1
 
 while (p == 4):
     estadocivil = input("Digite seu estado civil (S, C, V ou D)\n").lower()
-    if (estadocivil != "s") or (estadocivil != "c") or (estadocivil != "v") or (estadocivil != "d"):
+    if (estadocivil != "s") and (estadocivil != "c") and (estadocivil != "v") and (estadocivil != "d"):
         print("Estado civil inválido\n")
         continue
     p += 1 # Parar a condição de LOOP de "while (p == 0)"
 
-    # Exercício 5
+    # Exercício 5 (Lista de Desafios)
 
+numeroprimo = int(input("Digite um valor: "))
+if numeroprimo < 2:
+    print(f"{numeroprimo} não é um número primo")
+else:
+    divisão = 2
+    while divisão < numeroprimo:
+        if numeroprimo % divisão == 0:
+            print(f"{numeroprimo} não é um número primo")
+            break  # Encontrar divisor
+        divisão += 1
+    else:
+        print(f"{numeroprimo} é um número primo")
 
-
-
-
-
-
+        # Fim² :D
